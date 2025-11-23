@@ -8,8 +8,6 @@
     Switch(config)#
     Switch(config)#hostname MSW0
     MSW0(config)#
-    MSW0(config)#enable secret
-    % Incomplete command.
     MSW0(config)#enable secret CCNA
     MSW0(config)#
     MSW0(config)#do show interface status
@@ -20,22 +18,9 @@
     Fa0/4                        connected    1          a-full  a-100 10/100BaseTX
     Fa0/5                        notconnect   1          auto    auto  10/100BaseTX
     Fa0/6                        notconnect   1          auto    auto  10/100BaseTX
-    Fa0/7                        notconnect   1          auto    auto  10/100BaseTX
-    Fa0/8                        notconnect   1          auto    auto  10/100BaseTX
-    Fa0/9                        notconnect   1          auto    auto  10/100BaseTX
-    Fa0/10                       notconnect   1          auto    auto  10/100BaseTX
-    Fa0/11                       notconnect   1          auto    auto  10/100BaseTX
-    Fa0/12                       notconnect   1          auto    auto  10/100BaseTX
-    Fa0/13                       notconnect   1          auto    auto  10/100BaseTX
-    Fa0/14                       notconnect   1          auto    auto  10/100BaseTX
-    Fa0/15                       notconnect   1          auto    auto  10/100BaseTX
-    Fa0/16                       notconnect   1          auto    auto  10/100BaseTX
-    Fa0/17                       notconnect   1          auto    auto  10/100BaseTX
-    Fa0/18                       notconnect   1          auto    auto  10/100BaseTX
-    Fa0/19                       notconnect   1          auto    auto  10/100BaseTX
-    Fa0/20                       notconnect   1          auto    auto  10/100BaseTX
-    Fa0/21                       notconnect   1          auto    auto  10/100BaseTX
-    Fa0/22                       notconnect   1          auto    auto  10/100BaseTX
+    
+    (trancated...)
+    
     Fa0/23                       notconnect   1          auto    auto  10/100BaseTX
     Fa0/24                       notconnect   1          auto    auto  10/100BaseTX
     Gig0/1                       connected    trunk      a-full  a-100 10/100/1000BaseTX
@@ -51,46 +36,12 @@
     
     %LINK-5-CHANGED: Interface FastEthernet0/6, changed state to administratively down
     
-    %LINK-5-CHANGED: Interface FastEthernet0/7, changed state to administratively down
-    
-    %LINK-5-CHANGED: Interface FastEthernet0/8, changed state to administratively down
-    
-    %LINK-5-CHANGED: Interface FastEthernet0/9, changed state to administratively down
-    
-    %LINK-5-CHANGED: Interface FastEthernet0/10, changed state to administratively down
-    
-    %LINK-5-CHANGED: Interface FastEthernet0/11, changed state to administratively down
-    
-    %LINK-5-CHANGED: Interface FastEthernet0/12, changed state to administratively down
-    
-    %LINK-5-CHANGED: Interface FastEthernet0/13, changed state to administratively down
-    
-    %LINK-5-CHANGED: Interface FastEthernet0/14, changed state to administratively down
-    
-    %LINK-5-CHANGED: Interface FastEthernet0/15, changed state to administratively down
-    
-    %LINK-5-CHANGED: Interface FastEthernet0/16, changed state to administratively down
-    
-    %LINK-5-CHANGED: Interface FastEthernet0/17, changed state to administratively down
-    
-    %LINK-5-CHANGED: Interface FastEthernet0/18, changed state to administratively down
-    
-    %LINK-5-CHANGED: Interface FastEthernet0/19, changed state to administratively down
-    
-    %LINK-5-CHANGED: Interface FastEthernet0/20, changed state to administratively down
-    
-    %LINK-5-CHANGED: Interface FastEthernet0/21, changed state to administratively down
-    
-    %LINK-5-CHANGED: Interface FastEthernet0/22, changed state to administratively down
+    (trancated...)
     
     %LINK-5-CHANGED: Interface FastEthernet0/23, changed state to administratively down
     
     %LINK-5-CHANGED: Interface FastEthernet0/24, changed state to administratively down
     MSW0(config-if-range)#
-    MSW0(config-if-range)#interface f0/1-2
-                           ^
-    % Invalid input detected at '^' marker.
-    	
     MSW0(config-if-range)#interface range f0/1-2
     MSW0(config-if-range)#
     MSW0(config-if-range)#switchport mode access
@@ -119,11 +70,7 @@
     MSW0(config-vlan)#name IT
     MSW0(config-vlan)#
     MSW0(config-vlan)#vlan 20
-    MSW0(config-vlan)#
-    MSW0(config-vlan)#ENGINEERING
-                       ^
-    % Invalid input detected at '^' marker.
-    	
+    MSW0(config-vlan)#	
     MSW0(config-vlan)#name ENGINEERING
     MSW0(config-vlan)#
     MSW0(config-vlan)#vlan 10
@@ -171,28 +118,14 @@
     Fa0/4                        connected    50         a-full  a-100 10/100BaseTX
     Fa0/5     ##Not in use##     disabled 1          auto    auto  10/100BaseTX
     Fa0/6     ##Not in use##     disabled 1          auto    auto  10/100BaseTX
-    Fa0/7     ##Not in use##     disabled 1          auto    auto  10/100BaseTX
-    Fa0/8     ##Not in use##     disabled 1          auto    auto  10/100BaseTX
-    Fa0/9     ##Not in use##     disabled 1          auto    auto  10/100BaseTX
-    Fa0/10    ##Not in use##     disabled 1          auto    auto  10/100BaseTX
-    Fa0/11    ##Not in use##     disabled 1          auto    auto  10/100BaseTX
-    Fa0/12    ##Not in use##     disabled 1          auto    auto  10/100BaseTX
-    Fa0/13    ##Not in use##     disabled 1          auto    auto  10/100BaseTX
-    Fa0/14    ##Not in use##     disabled 1          auto    auto  10/100BaseTX
-    Fa0/15    ##Not in use##     disabled 1          auto    auto  10/100BaseTX
-    Fa0/16    ##Not in use##     disabled 1          auto    auto  10/100BaseTX
-    Fa0/17    ##Not in use##     disabled 1          auto    auto  10/100BaseTX
-    Fa0/18    ##Not in use##     disabled 1          auto    auto  10/100BaseTX
-    Fa0/19    ##Not in use##     disabled 1          auto    auto  10/100BaseTX
-    Fa0/20    ##Not in use##     disabled 1          auto    auto  10/100BaseTX
-    Fa0/21    ##Not in use##     disabled 1          auto    auto  10/100BaseTX
-    Fa0/22    ##Not in use##     disabled 1          auto    auto  10/100BaseTX
+    
+    (trancated...)
+    
     Fa0/23    ##Not in use##     disabled 1          auto    auto  10/100BaseTX
     Fa0/24    ##Not in use##     disabled 1          auto    auto  10/100BaseTX
     Gig0/1                       connected    trunk      a-full  a-100 10/100/1000BaseTX
     Gig0/2                       notconnect   1          auto    auto  10/100/1000BaseTX
     
-    MSW0#
     MSW0#
     MSW0#configure terminal
     Enter configuration commands, one per line.  End with CNTL/Z.
@@ -204,7 +137,7 @@
     
     %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan10, changed state to up
     
-    MSW0(config-if)#ip address 192.168.255.12 255.255.255.240
+    MSW0(config-if)#ip address 192.168.255.14 255.255.255.240
     MSW0(config-if)#
     MSW0(config-if)#no shutdown
     MSW0(config-if)#
@@ -214,7 +147,7 @@
     
     %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan20, changed state to up
     
-    MSW0(config-if)#ip address 192.168.255.26 255.255.255.240
+    MSW0(config-if)#ip address 192.168.255.30 255.255.255.240
     MSW0(config-if)#
     MSW0(config-if)#no shutdown
     MSW0(config-if)#
@@ -224,7 +157,7 @@
     
     %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan30, changed state to up
     
-    MSW0(config-if)#ip address 192.168.255.40 255.255.255.240
+    MSW0(config-if)#ip address 192.168.255.46 255.255.255.240
     MSW0(config-if)#
     MSW0(config-if)#no shutdown
     MSW0(config-if)#
@@ -244,7 +177,7 @@
     
     %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan50, changed state to up
     
-    MSW0(config-if)#ip address 192.168.255.68 255.255.255.240
+    MSW0(config-if)#ip address 192.168.255.78 255.255.255.240
     MSW0(config-if)#
     MSW0(config-if)#no shutdown
     MSW0(config-if)#
@@ -257,12 +190,26 @@
     MSW0(config-if)#
     MSW0(config-if)#no switchport
     MSW0(config-if)#
-    MSW0(config-if)#ip address 192.168.1.1 255.255.255.252
+    MSW0(config-if)#ip address 192.168.255.81 255.255.255.252
     MSW0(config-if)#no shutdown
     MSW0(config-if)#
     MSW0(config-if)#exit
     MSW0(config)#
-    MSW0(config)#ip route 0.0.0.0 0.0.0.0 192.168.1.2
+    MSW0(config)#ip route 0.0.0.0 0.0.0.0 192.168.255.82
+    MSW0(config)#
+    MSW0(config)#do show ip int br
+    Interface              IP-Address      OK? Method Status                Protocol 
+    
+    (trancated...)
+    
+    GigabitEthernet0/1     unassigned      YES unset  up                    up 
+    GigabitEthernet0/2     192.168.255.81  YES manual up                    up 
+    Vlan1                  unassigned      YES unset  administratively down down 
+    Vlan10                 192.168.255.14  YES manual up                    up 
+    Vlan20                 192.168.255.30  YES manual up                    up 
+    Vlan30                 192.168.255.46  YES manual up                    up 
+    Vlan40                 192.168.255.62  YES manual up                    up 
+    Vlan50                 192.168.255.78  YES manual up                    up
     MSW0(config)#
     MSW0(config)#do write
     Building configuration...
