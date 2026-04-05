@@ -1,3 +1,9 @@
+## Overview
+<img width="1366" height="768" alt="Configuring SVIs on L3 Switch Overview" src="https://github.com/user-attachments/assets/f47c9fe1-c4e7-4576-945b-b55baf948a66" />
+
+---    
+## SVI Configurations
+
     Switch>
     Switch>
     Switch>enable
@@ -218,3 +224,7 @@
     %LINK-5-CHANGED: Interface GigabitEthernet0/2, changed state to up
     
     %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/2, changed state to up
+
+---
+## Ping Test
+<img width="1366" height="768" alt="Configuring SVIs on L3 Switch (ping confirmation) 1" src="https://github.com/user-attachments/assets/41d25d94-d018-493a-b580-8c02a815b6a7" />
